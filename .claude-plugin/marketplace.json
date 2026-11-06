@@ -1,0 +1,5 @@
+{
+  "name": "alexa-mods",
+  "owner": { "name": "AlexLetics" },
+  "plugins": [{ "name": "handoff-guard", "source": "./" }]
+}

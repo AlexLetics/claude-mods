@@ -1,0 +1,38 @@
+{
+  "name": "handoff-guard",
+  "version": "0.1.0",
+  "description": "Replaces auto-compact with the handoff skill: at a context threshold, write a handoff, /clear, and feed the handoff into the fresh session.",
+  "userConfig": {
+    "threshold": {
+      "type": "number",
+      "title": "Threshold in percent",
+      "description": "The handoff starts once the context window reaches this usage.",
+      "default": 65
+    },
+    "fallbackAt": {
+      "type": "number",
+      "title": "Fallback in percent",
+      "description": "From this usage on, the guard allows normal compaction again in case the handoff didn't finish.",
+      "default": 90
+    },
+    "skill": {
+      "type": "string",
+      "title": "Handoff command",
+      "description": "Name of the skill (without slash) that writes the handoff.",
+      "default": "handoff"
+    },
+    "autoClear": {
+      "type": "boolean",
+      "title": "Automatic /clear",
+      "description": "Run /clear by itself after the handoff. Off: the guard waits until you type /clear.",
+      "default": true
+    },
+    "resume": {
+      "type": "string",
+      "title": "After /clear",
+      "description": "immediately: Claude reads the handoff and continues right away. next-prompt: the handoff is silently attached to your next message.",
+      "default": "immediately",
+      "options": ["immediately", "next-prompt"]
+    }
+  }
+}
