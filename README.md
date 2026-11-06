@@ -26,6 +26,7 @@ Plugins, Add marketplace with `AlexLetics/claude-mods`, then Add plugin.
 
 **Requirement:** a skill that writes a handoff as a `.md` file, invoked as `/handoff`
 by default (set another name with the `skill` setting). The mod does not ship that skill.
+It was built and tested with Matt Pocock's `handoff` skill (see [Credits](#credits)).
 
 ---
 
@@ -186,6 +187,16 @@ session end → handoff in the first prompt. They also cover `next-prompt` mode
 and check that auto-compact is skipped but a manual `/compact` is not.
 
 Try it live without waiting for 65 %: temporarily set `threshold` to e.g. `5`.
+
+---
+
+## Credits
+
+The handoff itself is written by the **`handoff` skill by Matt Pocock**, from his
+collection [mattpocock/skills](https://github.com/mattpocock/skills) (MIT License):
+[skills/productivity/handoff/SKILL.md](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md).
+Install that skill first; this mod only decides *when* it runs and carries its result
+into the fresh session.
 
 ---
 
