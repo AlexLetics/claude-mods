@@ -2,6 +2,8 @@
   "name": "handoff-guard",
   "version": "0.1.0",
   "description": "Replaces auto-compact with the handoff skill: at a context threshold, write a handoff, /clear, and feed the handoff into the fresh session.",
+  "license": "MIT",
+  "author": { "name": "AlexLetics" },
   "userConfig": {
     "threshold": {
       "type": "number",

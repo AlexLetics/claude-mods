@@ -186,3 +186,9 @@ session end → handoff in the first prompt. They also cover `next-prompt` mode
 and check that auto-compact is skipped but a manual `/compact` is not.
 
 Try it live without waiting for 65 %: temporarily set `threshold` to e.g. `5`.
+
+---
+
+## License
+
+MIT, see [LICENSE](LICENSE).
